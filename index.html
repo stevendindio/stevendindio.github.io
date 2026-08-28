@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steven D'Indio — Candidato al Consiglio di Amministrazione | Università degli Studi del Sannio</title>
+<meta name="description" content="Programma elettorale di Steven D'Indio, candidato al Consiglio di Amministrazione dell'Università degli Studi del Sannio.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Steven D'Indio — Candidato al CdA | Università degli Studi del Sannio">
+<meta property="og:description" content="Programma elettorale di Steven D'Indio, candidato al Consiglio di Amministrazione dell'Università degli Studi del Sannio.">
+<meta property="og:locale" content="it_IT">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Steven D'Indio",
+  "jobTitle": "Candidato al Consiglio di Amministrazione",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "Università degli Studi del Sannio" }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --ink: #1b140d;
+    --ink-soft: #4a4033;
+    --paper: #eeede2;
+    --paper-dim: #e4e2d3;
+    --surface: #ffffff;
+    --line: #dad7c7;
+    --gold: #c99a2e;
+    --gold-deep: #8a6a20;
+    --gold-bright: #e0b84a;
+    --sage: #6e7a5c;
+    --radius: 3px;
+    --radius-lg: 4px;
+    --shadow-sm: 0 1px 2px rgba(27,20,13,0.05), 0 6px 18px rgba(27,20,13,0.06);
+    --shadow-md: 0 2px 6px rgba(27,20,13,0.08), 0 20px 40px rgba(27,20,13,0.12);
+    --serif: 'Marcellus', serif;
+    --sans: 'Work Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--paper);
+    line-height: 1.65;
+    font-size: 16px;
+  }
+
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: 0.01em; }
+
+  a { color: inherit; }
+  img, svg { display: block; max-width: 100%; }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--gold-deep);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  a:focus:not(:focus-visible), button:focus:not(:focus-visible) { outline: none; }
+
+  .skip-link {
+    position: absolute; left: -9999px; top: 0;
+    background: var(--ink); color: var(--paper);
+    padding: 0.75rem 1.25rem; z-index: 1000;
+    font-family: var(--mono); font-size: 0.85rem; font-weight: 600;
+  }
+  .skip-link:focus { left: 0; }
+
+  .wrap { max-width: 1140px; margin: 0 auto; padding: 0 1.75rem; }
+
+  .mono-tag {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+
+  /* ---------- Scroll progress ---------- */
+  .progress-bar {
+    position: fixed; top: 0; left: 0; height: 3px;
+    background: var(--gold);
+    width: 0%;
+    z-index: 300;
+    transition: width 0.1s linear;
+  }
+
+  /* ---------- Emblem (wax-seal monogram) ---------- */
+  .seal {
+    display: inline-flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .seal svg { display: block; }
+
+  /* ---------- Header ---------- */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(238,237,226,0.92);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+  }
+  .navbar {
+    max-width: 1140px; margin: 0 auto; padding: 0.85rem 1.75rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand { display: flex; align-items: center; gap: 0.8rem; }
+  .brand-text .name { font-family: var(--serif); font-size: 1.05rem; color: var(--ink); line-height: 1.1; }
+  .brand-text .role { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 3px; }
+  .nav-links { display: flex; gap: 2.2rem; }
+  .nav-links a {
+    text-decoration: none; font-size: 0.85rem; font-weight: 600;
+    color: var(--ink); padding-bottom: 3px;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .nav-links a:hover, .nav-links a.active { border-color: var(--gold); color: var(--gold-deep); }
+
+  .menu-toggle {
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    width: 38px; height: 38px; background: none; border: none; cursor: pointer;
+  }
+  .menu-toggle span { display: block; width: 100%; height: 2px; background: var(--ink); transition: transform 0.25s ease, opacity 0.2s ease; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+  .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mobile-nav[hidden] { display: none; }
+  .mobile-nav { display: flex; flex-direction: column; background: var(--paper); border-top: 1px solid var(--line); padding: 0.25rem 1.75rem 1.1rem; }
+  .mobile-nav a { padding: 0.9rem 0; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--line); color: var(--ink); }
+  .mobile-nav a:last-child { border-bottom: none; }
+  .mobile-nav a.active { color: var(--gold-deep); }
+
+  @media (max-width: 720px) {
+    .nav-links { display: none; }
+    .menu-toggle { display: flex; }
+  }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 5.5rem 1.75rem 6rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-arch {
+    position: absolute;
+    right: -60px; top: 50%; transform: translateY(-50%);
+    width: 620px; height: 480px;
+    color: var(--gold);
+    opacity: 0.16;
+    pointer-events: none;
+  }
+  .hero-inner { max-width: 1140px; margin: 0 auto; padding: 0 1.75rem; position: relative; z-index: 1; }
+  .hero .mono-tag { color: var(--gold-bright); display: block; margin-bottom: 1.4rem; }
+  .hero h1 {
+    font-size: clamp(2.6rem, 7vw, 4.6rem);
+    letter-spacing: 0.02em;
+    line-height: 1.05;
+    margin-bottom: 0.9rem;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.25);
+  }
+  .hero .role-line {
+    font-size: 1.1rem; color: #d8cdb8; font-weight: 500; margin-bottom: 2.4rem;
+    max-width: 30rem;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    padding: 0.85rem 1.7rem; font-weight: 600; font-size: 0.92rem;
+    text-decoration: none; border-radius: var(--radius);
+    transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-primary { background: var(--gold); color: var(--ink); }
+  .btn-primary:hover { background: var(--gold-bright); transform: translateY(-2px); box-shadow: 0 10px 22px rgba(201,154,46,0.35); }
+  .btn-ghost { border: 1px solid rgba(238,237,226,0.35); color: var(--paper); }
+  .btn-ghost:hover { border-color: var(--gold-bright); color: var(--gold-bright); transform: translateY(-2px); }
+
+  /* ---------- Section shell ---------- */
+  section.block { padding: 5.5rem 0; }
+  section.block + section.block { border-top: 1px solid var(--line); }
+  .section-head { max-width: 680px; margin: 0 auto 3.2rem; }
+  .section-head .mono-tag { display: block; margin-bottom: 0.7rem; }
+  .section-head h2 { font-size: clamp(1.9rem, 4vw, 2.5rem); color: var(--ink); margin-bottom: 0.9rem; }
+  .section-head p { color: var(--ink-soft); font-size: 1.03rem; max-width: 62ch; }
+
+  /* ---------- Preambolo (manifesto) ---------- */
+  .preambolo-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 3.2rem; align-items: start; }
+  .preambolo-copy { position: relative; padding-left: 2.2rem; }
+  .preambolo-copy::before {
+    content: "§";
+    position: absolute; left: -0.2rem; top: -0.6rem;
+    font-family: var(--serif); font-size: 4rem; color: var(--gold);
+    opacity: 0.55; line-height: 1;
+  }
+  .preambolo-copy p { margin-bottom: 1.15rem; font-size: 1.04rem; max-width: 62ch; }
+  .preambolo-quote {
+    border-left: 3px solid var(--gold);
+    padding: 0.3rem 0 0.3rem 1.4rem;
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    color: var(--ink);
+    margin: 1.7rem 0;
+  }
+  .impegni {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: var(--radius-lg);
+    padding: 2.3rem;
+    box-shadow: var(--shadow-md);
+  }
+  .impegni .mono-tag { color: var(--gold-bright); display: block; margin-bottom: 1.3rem; }
+  .impegno-item { display: flex; gap: 1.1rem; align-items: baseline; padding: 0.9rem 0; border-bottom: 1px solid rgba(238,237,226,0.14); }
+  .impegno-item:last-child { border-bottom: none; }
+  .impegno-num { font-family: var(--mono); color: var(--gold-bright); font-size: 0.95rem; width: 1.7rem; flex-shrink: 0; }
+
+  /* ---------- Statuto (programma) ---------- */
+  .titoli-nav {
+    display: flex; flex-wrap: wrap; gap: 0.6rem;
+    margin-bottom: 3.4rem;
+  }
+  .titoli-nav a {
+    font-family: var(--mono); font-size: 0.74rem; font-weight: 600;
+    letter-spacing: 0.04em; text-decoration: none;
+    color: var(--ink-soft);
+    border: 1px solid var(--line);
+    border-radius: 50px;
+    padding: 0.5rem 1.05rem;
+    transition: border-color 0.2s, color 0.2s, background 0.2s;
+  }
+  .titoli-nav a:hover { border-color: var(--gold); color: var(--gold-deep); background: var(--surface); }
+
+  .titolo { margin-bottom: 3.6rem; }
+  .titolo:last-child { margin-bottom: 0; }
+  .titolo-head {
+    display: flex; align-items: baseline; gap: 1rem;
+    margin-bottom: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .titolo-num { font-family: var(--serif); font-size: 1.5rem; color: var(--gold-deep); }
+  .titolo-head h3 { font-size: 1.35rem; color: var(--ink); font-weight: 400; }
+
+  .articoli-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.6rem; }
+
+  .articolo {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 1.9rem;
+    display: flex; flex-direction: column; justify-content: space-between;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .articolo:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+  .articolo.featured { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: var(--shadow-md); }
+  .articolo.featured .art-title { color: var(--paper); }
+  .articolo.featured .art-body p, .articolo.featured .art-body li { color: #d8cdb8; }
+  .articolo.featured .art-body li::before { color: var(--gold-bright); }
+  .articolo.featured .art-badge { color: var(--gold-bright); }
+  .articolo.featured .art-goal { background: rgba(238,237,226,0.07); border-left-color: var(--gold-bright); color: var(--paper); }
+
+  .art-header { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.15rem; }
+  .art-badge { font-family: var(--mono); font-size: 0.78rem; font-weight: 600; color: var(--gold-deep); letter-spacing: 0.03em; }
+  .art-title { font-family: var(--serif); font-size: 1.2rem; color: var(--ink); line-height: 1.3; }
+  .art-body p { font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 0.9rem; }
+  .art-body ul { list-style: none; margin-bottom: 1.3rem; }
+  .art-body li { font-size: 0.9rem; position: relative; padding-left: 1.1rem; margin-bottom: 0.5rem; color: var(--ink-soft); }
+  .art-body li::before { content: "—"; position: absolute; left: 0; color: var(--gold); }
+  .art-goal {
+    background: var(--paper-dim);
+    border-left: 3px solid var(--gold);
+    padding: 0.7rem 0.9rem;
+    font-size: 0.82rem; font-weight: 600; color: var(--ink);
+    margin-top: auto;
+  }
+  .art-goal span { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.1em; display: block; color: var(--gold-deep); margin-bottom: 3px; }
+  .articolo.featured .art-goal span { color: var(--gold-bright); }
+
+  /* reveal on scroll */
+  .js-reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+  .js-reveal.in-view { opacity: 1; transform: translateY(0); }
+
+  /* ---------- Epilogo (visione) ---------- */
+  .epilogo {
+    background: var(--ink); color: var(--paper);
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .epilogo-arch {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%,-46%);
+    width: 900px; height: 700px; color: var(--gold); opacity: 0.09; pointer-events: none;
+  }
+  .epilogo .inner { position: relative; z-index: 1; }
+  .epilogo .mono-tag { color: var(--gold-bright); }
+  .epilogo h2 { color: var(--paper); }
+  .epilogo p.lead { color: #d8cdb8; max-width: 580px; margin: 0 auto; }
+  .visione-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; margin-top: 2.3rem; }
+  .visione-tag {
+    border: 1px solid rgba(201,154,46,0.45);
+    color: var(--gold-bright);
+    padding: 0.5rem 1.2rem; border-radius: 50px;
+    font-family: var(--mono); font-size: 0.74rem; font-weight: 600;
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+
+  /* ---------- Footer ---------- */
+  footer { background: var(--ink); color: #a99a7c; padding: 3rem 1.75rem 2.5rem; text-align: center; border-top: 1px solid rgba(238,237,226,0.1); }
+  footer .seal { margin-bottom: 1rem; }
+  footer .name { font-family: var(--serif); color: var(--paper); font-size: 1.1rem; }
+  footer .role { font-size: 0.85rem; margin-top: 0.35rem; }
+  footer .meta { font-family: var(--mono); font-size: 0.72rem; margin-top: 1.3rem; letter-spacing: 0.03em; color: #7c6f57; }
+  footer .hashtag { display: inline-block; margin-top: 1.4rem; font-family: var(--mono); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; color: var(--gold-bright); }
+
+  /* ---------- Back to top ---------- */
+  .to-top {
+    position: fixed; right: 1.4rem; bottom: 1.4rem;
+    width: 46px; height: 46px; border-radius: 50%;
+    background: var(--ink); color: var(--gold-bright);
+    border: 1px solid rgba(201,154,46,0.4);
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; opacity: 0; pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 90;
+  }
+  .to-top.visible { opacity: 1; pointer-events: auto; }
+  .to-top:hover { transform: translateY(-3px); }
+
+  @media (max-width: 860px) {
+    .preambolo-grid { grid-template-columns: 1fr; }
+    .hero-arch { opacity: 0.10; width: 460px; height: 360px; }
+  }
+  @media (max-width: 640px) {
+    section.block { padding: 3.6rem 0; }
+    .hero { padding: 4rem 1.5rem 4.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Vai al contenuto</a>
+<div class="progress-bar" id="progressBar"></div>
+
+<header>
+  <div class="navbar">
+    <div class="brand">
+      <span class="seal" aria-hidden="true">
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="19" stroke="#1b140d" stroke-width="1"/>
+          <circle cx="20" cy="20" r="15" stroke="#c99a2e" stroke-width="1"/>
+          <text x="20" y="26" text-anchor="middle" font-family="Marcellus, serif" font-size="15" fill="#1b140d">SD</text>
+        </svg>
+      </span>
+      <div class="brand-text">
+        <div class="name">Steven D'Indio</div>
+        <div class="role">Candidato al CdA · Unisannio</div>
+      </div>
+    </div>
+    <nav class="nav-links" aria-label="Navigazione principale">
+      <a href="#preambolo">Preambolo</a>
+      <a href="#statuto">Statuto</a>
+      <a href="#epilogo">Visione</a>
+    </nav>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Apri il menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Navigazione mobile" hidden>
+    <a href="#preambolo">Preambolo</a>
+    <a href="#statuto">Statuto</a>
+    <a href="#epilogo">Visione</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <svg class="hero-arch" viewBox="0 0 300 240" aria-hidden="true">
+    <rect x="25" y="45" width="250" height="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M60 57 A90 90 0 0 1 240 57" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="40" y="60" width="20" height="150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="240" y="60" width="20" height="150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="46" y1="70" x2="46" y2="200" stroke="currentColor" stroke-width="0.75"/>
+    <line x1="54" y1="70" x2="54" y2="200" stroke="currentColor" stroke-width="0.75"/>
+    <line x1="246" y1="70" x2="246" y2="200" stroke="currentColor" stroke-width="0.75"/>
+    <line x1="254" y1="70" x2="254" y2="200" stroke="currentColor" stroke-width="0.75"/>
+    <line x1="20" y1="210" x2="280" y2="210" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <div class="hero-inner">
+    <span class="mono-tag">Elezioni Studentesche — Università degli Studi del Sannio</span>
+    <h1>Steven<br>D'Indio</h1>
+    <p class="role-line">Candidato al Consiglio di Amministrazione. Un programma scritto come uno statuto: quattro titoli, dodici articoli, un solo obiettivo.</p>
+    <div class="hero-actions">
+      <a href="#statuto" class="btn btn-primary">Leggi lo statuto →</a>
+      <a href="#preambolo" class="btn btn-ghost">Il preambolo</a>
+    </div>
+  </div>
+</section>
+
+<section id="preambolo" class="block">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono-tag">Preambolo</span>
+      <h2>Una rappresentanza responsabile</h2>
+      <p>L'Università non è soltanto il luogo nel quale si sostengono gli esami. È il luogo nel quale si costruisce il proprio futuro.</p>
+    </div>
+
+    <div class="preambolo-grid">
+      <div class="preambolo-copy">
+        <p>La rappresentanza studentesca non può limitarsi a raccogliere segnalazioni o intervenire sulle emergenze: deve partecipare alle scelte che determinano il futuro dell'Ateneo.</p>
+        <div class="preambolo-quote">"La mia candidatura nasce per portare nel Consiglio di Amministrazione una rappresentanza presente, competente, concreta e responsabile."</div>
+        <p>Una rappresentanza capace di ascoltare le esigenze della comunità studentesca e di trasformarle in soluzioni tangibili, verificabili nel tempo.</p>
+      </div>
+
+      <div class="impegni">
+        <span class="mono-tag">Quattro impegni</span>
+        <div class="impegno-item"><span class="impegno-num">I.</span><span>Non promettere tutto</span></div>
+        <div class="impegno-item"><span class="impegno-num">II.</span><span>Scegliere le priorità</span></div>
+        <div class="impegno-item"><span class="impegno-num">III.</span><span>Costruire soluzioni</span></div>
+        <div class="impegno-item"><span class="impegno-num">IV.</span><span>Pretendere risultati</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="statuto" class="block">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="mono-tag">Lo Statuto del Programma</span>
+      <h2>Quattro titoli, dodici articoli</h2>
+      <p>Il programma è organizzato come un testo normativo: ogni titolo raccoglie gli articoli che riguardano un'area della vita universitaria.</p>
+    </div>
+
+    <nav class="titoli-nav" aria-label="Salta a un titolo">
+      <a href="#titolo-1">Titolo I — Vita e Diritti</a>
+      <a href="#titolo-2">Titolo II — Formazione e Lavoro</a>
+      <a href="#titolo-3">Titolo III — Comunità e Territorio</a>
+      <a href="#titolo-4">Titolo IV — Governance e Visione</a>
+    </nav>
+
+    <div class="titolo" id="titolo-1">
+      <div class="titolo-head"><span class="titolo-num">I.</span><h3>Vita e Diritti dello Studente</h3></div>
+      <div class="articoli-grid">
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 01</span><span class="art-title">Diritto alla Ristorazione</span></div>
+            <div class="art-body">
+              <p>Apertura di un confronto strutturato tra Unisannio e ADiSURC per un servizio accessibile anche nelle sedi decentrate.</p>
+              <ul>
+                <li>Tavolo permanente Unisannio–ADiSURC</li>
+                <li>Strutture idonee nelle aree più frequentate</li>
+                <li>Ampliamento punti convenzionati e tariffe agevolate per pendolari e fuorisede</li>
+                <li>Varietà nei menu ed esigenze alimentari specifiche</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Ristorazione come diritto reale, non un'eccezione.</div>
+        </article>
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 02</span><span class="art-title">Una Mensa di Qualità</span></div>
+            <div class="art-body">
+              <p>Garantire un servizio efficiente, dignitoso e verificabile nel tempo.</p>
+              <ul>
+                <li>Questionari periodici di valutazione per studenti</li>
+                <li>Raccolta segnalazioni e controllo tempi di attesa</li>
+                <li>Qualità delle materie prime e trasparenza dei dati</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Non soltanto più mensa: una mensa migliore.</div>
+        </article>
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 03</span><span class="art-title">Segreterie & Burocrazia Zero</span></div>
+            <div class="art-body">
+              <p>La burocrazia non deve essere un ostacolo al percorso di studi.</p>
+              <ul>
+                <li>Digitalizzazione e semplificazione delle pratiche</li>
+                <li>Tempi di risposta rapidi e assistenza organizzata</li>
+                <li>FAQ istituzionali aggiornate e coordinate</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Meno burocrazia, più tempo per studiare.</div>
+        </article>
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 04</span><span class="art-title">Una Nuova Comunicazione</span></div>
+            <div class="art-body">
+              <p>Comunicazione istituzionale moderna, coordinata ed efficace.</p>
+              <ul>
+                <li>Calendario unico delle scadenze accademiche</li>
+                <li>Avvisi tempestivi su variazioni lezioni/esami</li>
+                <li>Hub centralizzato per bandi, borse, tirocini ed Erasmus</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>L'informazione arriva allo studente, non il contrario.</div>
+        </article>
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 05</span><span class="art-title">Unisannio Senza Distanze</span></div>
+            <div class="art-body">
+              <p>Diritto alla frequenza e mobilità per pendolari e residenti fuori sede.</p>
+              <ul>
+                <li>Tavoli con Regione Campania, ADiSURC e vettori</li>
+                <li>Studio di navette dedicate dove necessarie</li>
+                <li>Integrazione ferro-gomma e sconti per studenti extra-provincia</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Ridurre la distanza tra studente e università.</div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="titolo" id="titolo-2">
+      <div class="titolo-head"><span class="titolo-num">II.</span><h3>Formazione e Lavoro</h3></div>
+      <div class="articoli-grid">
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 06</span><span class="art-title">Ponte verso il Lavoro</span></div>
+            <div class="art-body">
+              <p>La preparazione al mondo del lavoro deve iniziare dal primo anno.</p>
+              <ul>
+                <li>Potenziamento tirocini curriculari ed extra</li>
+                <li>Career Day periodici con professionisti e aziende</li>
+                <li>Valorizzazione delle attività extracurriculari</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Laurearsi con competenze richieste dal mercato.</div>
+        </article>
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 07</span><span class="art-title">Unisannio Talent</span></div>
+            <div class="art-body">
+              <p>Una piattaforma unica per connettere studenti, imprese, professionisti e istituzioni.</p>
+              <ul>
+                <li>Piattaforma digitale integrata</li>
+                <li>Offerte di lavoro, stage e bandi in tempo reale</li>
+                <li>Networking diretto con il tessuto economico</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Trasformare il network dell'Ateneo in opportunità.</div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="titolo" id="titolo-3">
+      <div class="titolo-head"><span class="titolo-num">III.</span><h3>Comunità e Territorio</h3></div>
+      <div class="articoli-grid">
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 08</span><span class="art-title">Spazi & Vita d'Ateneo</span></div>
+            <div class="art-body">
+              <p>Vivere l'ateneo e non solo frequentarlo per le lezioni.</p>
+              <ul>
+                <li>Piano di ricognizione di aule studio e biblioteche</li>
+                <li>Aree per associazioni e strutture sportive</li>
+                <li>Miglioramento dell'accessibilità e della sicurezza</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Più spazi, più qualità, più vita universitaria.</div>
+        </article>
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 09</span><span class="art-title">Sport, Cultura & Comunità</span></div>
+            <div class="art-body">
+              <p>Sostegno vivo alle iniziative culturali e sportive promosse dagli studenti.</p>
+              <ul>
+                <li>Collaborazione attiva con le associazioni studentesche</li>
+                <li>Calendario unico e condiviso degli eventi</li>
+                <li>Eventi interdipartimentali per unire l'ateneo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Costruire una comunità studentesca coesa.</div>
+        </article>
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 10</span><span class="art-title">Internazionalizzazione</span></div>
+            <div class="art-body">
+              <p>Opportunità globali accessibili e trasparenti per chiunque.</p>
+              <ul>
+                <li>Comunicazione potenziata su bandi Erasmus+</li>
+                <li>Integrazione efficace degli studenti internazionali</li>
+                <li>Mobilità legata a sbocchi occupazionali</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Esperienze internazionali per tutti, non per pochi.</div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="titolo" id="titolo-4">
+      <div class="titolo-head"><span class="titolo-num">IV.</span><h3>Governance e Visione</h3></div>
+      <div class="articoli-grid">
+
+        <article class="articolo js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 11</span><span class="art-title">Trasparenza & Ascolto</span></div>
+            <div class="art-body">
+              <p>La rappresentanza deve essere sempre verificabile e condivisa.</p>
+              <ul>
+                <li>Report periodici e pubblici sulle sedute di CdA</li>
+                <li>Canale permanente di segnalazione problemi</li>
+                <li>Consultazioni aperte sui temi prioritari</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Una rappresentanza che non scompare dopo il voto.</div>
+        </article>
+
+        <article class="articolo featured js-reveal">
+          <div>
+            <div class="art-header"><span class="art-badge">ART. 12</span><span class="art-title">Unisannio 2030</span></div>
+            <div class="art-body">
+              <p>Una visione strategica a lungo termine per lo sviluppo complessivo del nostro Ateneo.</p>
+              <ul>
+                <li>Ateneo più attrattivo, moderno e digitale</li>
+                <li>Forte radicamento nel territorio e sbocchi globali</li>
+                <li>Competitività e innovazione continua</li>
+              </ul>
+            </div>
+          </div>
+          <div class="art-goal"><span>Obiettivo</span>Costruire l'Ateneo per gli studenti di domani.</div>
+        </article>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="epilogo" class="block epilogo">
+  <svg class="epilogo-arch" viewBox="0 0 300 240" aria-hidden="true">
+    <rect x="25" y="45" width="250" height="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M60 57 A90 90 0 0 1 240 57" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="40" y="60" width="20" height="150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect x="240" y="60" width="20" height="150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <line x1="20" y1="210" x2="280" y2="210" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <div class="wrap inner">
+    <span class="mono-tag">Epilogo</span>
+    <h2>Unisannio 2030: la nostra visione</h2>
+    <p class="lead">Vogliamo un'Università del Sannio orientata al futuro, radicata nel territorio e aperta al mondo.</p>
+    <div class="visione-tags">
+      <span class="visione-tag">Attrattiva</span>
+      <span class="visione-tag">Moderna</span>
+      <span class="visione-tag">Internazionale</span>
+      <span class="visione-tag">Collegata al territorio</span>
+      <span class="visione-tag">Digitale</span>
+      <span class="visione-tag">Accessibile</span>
+      <span class="visione-tag">Competitiva</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span class="seal" aria-hidden="true">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="19" stroke="#eeede2" stroke-opacity="0.35" stroke-width="1"/>
+      <circle cx="20" cy="20" r="15" stroke="#c99a2e" stroke-width="1"/>
+      <text x="20" y="26" text-anchor="middle" font-family="Marcellus, serif" font-size="15" fill="#eeede2">SD</text>
+    </svg>
+  </span>
+  <div class="name">Steven D'Indio</div>
+  <div class="role">Candidato al Consiglio di Amministrazione</div>
+  <div class="meta">Elezioni Studentesche · Università degli Studi del Sannio</div>
+  <div class="hashtag">#STEVENINCDA</div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Torna in cima">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script>
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Scroll progress bar
+  const progressBar = document.getElementById('progressBar');
+  function updateProgress() {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    progressBar.style.width = scrolled + '%';
+  }
+  document.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+
+  // Mobile menu
+  const toggle = document.querySelector('.menu-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  toggle.addEventListener('click', () => {
+    const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+    mobileNav.hidden = isOpen;
+  });
+  mobileNav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      toggle.setAttribute('aria-expanded', 'false');
+      mobileNav.hidden = true;
+    });
+  });
+
+  // Scrollspy
+  const spySections = document.querySelectorAll('main > section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${entry.target.id}`);
+        });
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  spySections.forEach(s => spyObserver.observe(s));
+
+  // Reveal on scroll (skipped entirely if reduced motion, cards stay visible)
+  if (!reduceMotion) {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.js-reveal').forEach(el => revealObserver.observe(el));
+  }
+
+  // Back to top
+  const toTop = document.getElementById('toTop');
+  document.addEventListener('scroll', () => {
+    toTop.classList.toggle('visible', window.scrollY > 800);
+  }, { passive: true });
+  toTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+</script>
+
+</body>
+</html>
